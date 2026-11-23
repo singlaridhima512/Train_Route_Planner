@@ -5,7 +5,7 @@ import csv
 from pathlib import Path
 
 # STEP 1: Locate the project folder
-project_folder = Path(__file__).resolve().parent #parent takes one folder back(src to trainrouteplanner)
+project_folder = Path(__file__).resolve().parent.parent #parent takes one folder back(src to trainrouteplanner)
 
 # STEP 2: Locate the railway timetable CSV file
 file_path = project_folder / "data" / "raw" / "railway_timetable.csv"

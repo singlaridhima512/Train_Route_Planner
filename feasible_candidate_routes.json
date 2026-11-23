@@ -1,0 +1,420 @@
+[
+    {
+        "route_id": 1,
+        "source": "HWH",
+        "destination": "NDLS",
+        "segments": [
+            {
+                "source": "HWH",
+                "destination": "TATA",
+                "edge": {
+                    "destination": "TATA",
+                    "train_no": "12222",
+                    "distance": 250.0,
+                    "departure": "05:45 AM",
+                    "arrival": "08:48 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            },
+            {
+                "source": "TATA",
+                "destination": "GMO",
+                "edge": {
+                    "destination": "GMO",
+                    "train_no": "12819",
+                    "distance": 182.0,
+                    "departure": "11:30 PM",
+                    "arrival": "03:25 AM",
+                    "source_sequence": 9,
+                    "destination_sequence": 10
+                }
+            },
+            {
+                "source": "GMO",
+                "destination": "DDU",
+                "edge": {
+                    "destination": "DDU",
+                    "train_no": "12819",
+                    "distance": 374.0,
+                    "departure": "03:30 AM",
+                    "arrival": "08:30 AM",
+                    "source_sequence": 10,
+                    "destination_sequence": 11
+                }
+            },
+            {
+                "source": "DDU",
+                "destination": "PRYJ",
+                "edge": {
+                    "destination": "PRYJ",
+                    "train_no": "02249",
+                    "distance": 153.0,
+                    "departure": "03:45 PM",
+                    "arrival": "03:45 PM",
+                    "source_sequence": 5,
+                    "destination_sequence": 6
+                }
+            },
+            {
+                "source": "PRYJ",
+                "destination": "NDLS",
+                "edge": {
+                    "destination": "NDLS",
+                    "train_no": "12275",
+                    "distance": 634.0,
+                    "departure": "10:30 PM",
+                    "arrival": "06:15 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            }
+        ],
+        "metrics": {
+            "total_distance": 1593.0,
+            "connections": 5,
+            "train_changes": 3,
+            "trains_used": [
+                "12222",
+                "12819",
+                "02249",
+                "12275"
+            ]
+        },
+        "transfer_checks": [
+            {
+                "station": "TATA",
+                "incoming_train": "12222",
+                "outgoing_train": "12819",
+                "arrival": "08:48 AM",
+                "departure": "11:30 PM",
+                "waiting_time": 882,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "DDU",
+                "incoming_train": "12819",
+                "outgoing_train": "2249",
+                "arrival": "08:30 AM",
+                "departure": "03:45 PM",
+                "waiting_time": 435,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "PRYJ",
+                "incoming_train": "2249",
+                "outgoing_train": "12275",
+                "arrival": "03:45 PM",
+                "departure": "10:30 PM",
+                "waiting_time": 405,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            }
+        ],
+        "is_feasible": true
+    },
+    {
+        "route_id": 2,
+        "source": "HWH",
+        "destination": "NDLS",
+        "segments": [
+            {
+                "source": "HWH",
+                "destination": "TATA",
+                "edge": {
+                    "destination": "TATA",
+                    "train_no": "12222",
+                    "distance": 250.0,
+                    "departure": "05:45 AM",
+                    "arrival": "08:48 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            },
+            {
+                "source": "TATA",
+                "destination": "GMO",
+                "edge": {
+                    "destination": "GMO",
+                    "train_no": "12819",
+                    "distance": 182.0,
+                    "departure": "11:30 PM",
+                    "arrival": "03:25 AM",
+                    "source_sequence": 9,
+                    "destination_sequence": 10
+                }
+            },
+            {
+                "source": "GMO",
+                "destination": "PNME",
+                "edge": {
+                    "destination": "PNME",
+                    "train_no": "03325",
+                    "distance": 18.0,
+                    "departure": "10:45 AM",
+                    "arrival": "10:59 AM",
+                    "source_sequence": 2,
+                    "destination_sequence": 3
+                }
+            },
+            {
+                "source": "PNME",
+                "destination": "DDU",
+                "edge": {
+                    "destination": "DDU",
+                    "train_no": "07358",
+                    "distance": 355.0,
+                    "departure": "10:30 AM",
+                    "arrival": "10:30 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            },
+            {
+                "source": "DDU",
+                "destination": "PRYJ",
+                "edge": {
+                    "destination": "PRYJ",
+                    "train_no": "02249",
+                    "distance": 153.0,
+                    "departure": "03:45 PM",
+                    "arrival": "03:45 PM",
+                    "source_sequence": 5,
+                    "destination_sequence": 6
+                }
+            },
+            {
+                "source": "PRYJ",
+                "destination": "NDLS",
+                "edge": {
+                    "destination": "NDLS",
+                    "train_no": "12275",
+                    "distance": 634.0,
+                    "departure": "10:30 PM",
+                    "arrival": "06:15 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            }
+        ],
+        "metrics": {
+            "total_distance": 1592.0,
+            "connections": 6,
+            "train_changes": 5,
+            "trains_used": [
+                "12222",
+                "12819",
+                "03325",
+                "07358",
+                "02249",
+                "12275"
+            ]
+        },
+        "transfer_checks": [
+            {
+                "station": "TATA",
+                "incoming_train": "12222",
+                "outgoing_train": "12819",
+                "arrival": "08:48 AM",
+                "departure": "11:30 PM",
+                "waiting_time": 882,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "GMO",
+                "incoming_train": "12819",
+                "outgoing_train": "3325",
+                "arrival": "03:25 AM",
+                "departure": "10:45 AM",
+                "waiting_time": 440,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "PNME",
+                "incoming_train": "3325",
+                "outgoing_train": "7358",
+                "arrival": "10:59 AM",
+                "departure": "10:30 AM",
+                "waiting_time": 1411,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "DDU",
+                "incoming_train": "7358",
+                "outgoing_train": "2249",
+                "arrival": "10:30 AM",
+                "departure": "03:45 PM",
+                "waiting_time": 315,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "PRYJ",
+                "incoming_train": "2249",
+                "outgoing_train": "12275",
+                "arrival": "03:45 PM",
+                "departure": "10:30 PM",
+                "waiting_time": 405,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            }
+        ],
+        "is_feasible": true
+    },
+    {
+        "route_id": 3,
+        "source": "HWH",
+        "destination": "NDLS",
+        "segments": [
+            {
+                "source": "HWH",
+                "destination": "TATA",
+                "edge": {
+                    "destination": "TATA",
+                    "train_no": "12222",
+                    "distance": 250.0,
+                    "departure": "05:45 AM",
+                    "arrival": "08:48 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            },
+            {
+                "source": "TATA",
+                "destination": "GMO",
+                "edge": {
+                    "destination": "GMO",
+                    "train_no": "12819",
+                    "distance": 182.0,
+                    "departure": "11:30 PM",
+                    "arrival": "03:25 AM",
+                    "source_sequence": 9,
+                    "destination_sequence": 10
+                }
+            },
+            {
+                "source": "GMO",
+                "destination": "KQR",
+                "edge": {
+                    "destination": "KQR",
+                    "train_no": "08624",
+                    "distance": 93.0,
+                    "departure": "12:30 PM",
+                    "arrival": "12:30 PM",
+                    "source_sequence": 5,
+                    "destination_sequence": 6
+                }
+            },
+            {
+                "source": "KQR",
+                "destination": "DDU",
+                "edge": {
+                    "destination": "DDU",
+                    "train_no": "12259",
+                    "distance": 280.0,
+                    "departure": "09:47 PM",
+                    "arrival": "01:25 AM",
+                    "source_sequence": 3,
+                    "destination_sequence": 4
+                }
+            },
+            {
+                "source": "DDU",
+                "destination": "PRYJ",
+                "edge": {
+                    "destination": "PRYJ",
+                    "train_no": "02249",
+                    "distance": 153.0,
+                    "departure": "03:45 PM",
+                    "arrival": "03:45 PM",
+                    "source_sequence": 5,
+                    "destination_sequence": 6
+                }
+            },
+            {
+                "source": "PRYJ",
+                "destination": "NDLS",
+                "edge": {
+                    "destination": "NDLS",
+                    "train_no": "12275",
+                    "distance": 634.0,
+                    "departure": "10:30 PM",
+                    "arrival": "06:15 AM",
+                    "source_sequence": 1,
+                    "destination_sequence": 2
+                }
+            }
+        ],
+        "metrics": {
+            "total_distance": 1592.0,
+            "connections": 6,
+            "train_changes": 5,
+            "trains_used": [
+                "12222",
+                "12819",
+                "08624",
+                "12259",
+                "02249",
+                "12275"
+            ]
+        },
+        "transfer_checks": [
+            {
+                "station": "TATA",
+                "incoming_train": "12222",
+                "outgoing_train": "12819",
+                "arrival": "08:48 AM",
+                "departure": "11:30 PM",
+                "waiting_time": 882,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "GMO",
+                "incoming_train": "12819",
+                "outgoing_train": "8624",
+                "arrival": "03:25 AM",
+                "departure": "12:30 PM",
+                "waiting_time": 545,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "KQR",
+                "incoming_train": "8624",
+                "outgoing_train": "12259",
+                "arrival": "12:30 PM",
+                "departure": "09:47 PM",
+                "waiting_time": 557,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "DDU",
+                "incoming_train": "12259",
+                "outgoing_train": "2249",
+                "arrival": "01:25 AM",
+                "departure": "03:45 PM",
+                "waiting_time": 860,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            },
+            {
+                "station": "PRYJ",
+                "incoming_train": "2249",
+                "outgoing_train": "12275",
+                "arrival": "03:45 PM",
+                "departure": "10:30 PM",
+                "waiting_time": 405,
+                "is_feasible": true,
+                "reason": "Sufficient transfer time"
+            }
+        ],
+        "is_feasible": true
+    }
+]
